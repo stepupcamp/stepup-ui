@@ -1,10 +1,15 @@
+// LIBS
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container as ContainerBase } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {css} from "styled-components/macro"; //eslint-disable-line
-import illustration from "images/login-illustration.svg";
+
+//COMPONENTS
+import { Container as ContainerBase } from "components/misc/Layouts";
+
+//ASSETS
+import illustration from "images/login_illustration.png";
 import logo from "images/logo.svg";
 import googleIconImageSrc from "images/google-icon.png";
 import twitterIconImageSrc from "images/twitter-icon.png";
@@ -56,7 +61,7 @@ const IllustrationImage = styled.div`
 export default ({
   logoLinkUrl = "#",
   illustrationImageSrc = illustration,
-  headingText = "Sign In To Treact",
+  headingText = "Sign In To SetUp Camp",
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
@@ -95,6 +100,7 @@ export default ({
                   </SocialButton>
                 ))}
               </SocialButtonsContainer>
+              {/*
               <DividerTextContainer>
                 <DividerText>Or Sign in with your e-mail</DividerText>
               </DividerTextContainer>
@@ -106,6 +112,7 @@ export default ({
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
               </Form>
+              
               <p tw="mt-6 text-xs text-gray-600 text-center">
                 <a href={forgotPasswordUrl} tw="border-b border-gray-500 border-dotted">
                   Forgot Password ?
@@ -116,7 +123,7 @@ export default ({
                 <a href={signupUrl} tw="border-b border-gray-500 border-dotted">
                   Sign Up
                 </a>
-              </p>
+              </p>*/}
             </FormContainer>
           </MainContent>
         </MainContainer>
