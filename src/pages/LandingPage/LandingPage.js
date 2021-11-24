@@ -4,6 +4,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "./Hero/Hero";
+import Stats from "./Stats/Stats";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
@@ -31,7 +32,7 @@ const LandingPage = () => {
         Spotlight sessions with your camp mates. Become a doer"
         mainButtonText="Try for Free"
       />
-      <MainFeature />
+      <Stats />
       <Features />
       <MainFeature2 />
       <Portfolio />
