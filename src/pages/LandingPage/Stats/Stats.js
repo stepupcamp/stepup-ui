@@ -7,14 +7,16 @@ import {
 } from "components/misc/Headings.js";
 import {
   Container as ContainerBase,
-  ContentWithPaddingXl,
+  ContentWithPaddingLg,
 } from "components/misc/Layouts";
 import { SectionDescription } from "components/misc/Typography";
+import Card from "components/cards/ClubCard";
 
-const Container = tw(ContainerBase)`bg-primary-900 text-gray-100 -mx-8 px-8`;
+
+const Container = tw(ContainerBase)`bg-gradient-to-r from-primary-100  to-primary-900 text-stepuptext -mx-8 px-8`;
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)`sm:text-3xl md:text-4xl lg:text-5xl`;
-const Subheading = tw(SubheadingBase)`text-gray-100 text-center`;
+const Subheading = tw(SubheadingBase)`text-stepuptext text-center`;
 const Description = tw(
   SectionDescription
 )`text-gray-400 text-center mx-auto max-w-screen-md`;
@@ -45,7 +47,7 @@ const Stats = ({
 }) => {
   return (
     <Container>
-      <ContentWithPaddingXl>
+      <ContentWithPaddingLg>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           <Heading>{heading}</Heading>
@@ -59,7 +61,8 @@ const Stats = ({
             </Stat>
           ))}
         </StatsContainer>
-      </ContentWithPaddingXl>
+      </ContentWithPaddingLg>
+      <Card/>
     </Container>
   );
 };
